@@ -1,5 +1,4 @@
 const navbar = document.querySelector(".main-navbar");
-
 function navbarScrollInit() {
   if (window.scrollY > 1) {
     navbar.classList.add("main-navbar-scroll");
@@ -10,7 +9,6 @@ function navbarScrollInit() {
 
 document.addEventListener("scroll", () => {
   navbarScrollInit();
-  console.log(scrollY);
 });
 
 function scrollToElement(elementId) {
@@ -31,4 +29,15 @@ function scrollToElement(elementId) {
       top: scrollYValue,
     });
   }
+}
+
+function initLoader() {
+  var spinner = document.getElementById("spinner");
+  if (spinner) {
+    setTimeout(spinner.remove(), 4000);
+  }
+
+  window.scrollTo({
+    top: 0,
+  });
 }

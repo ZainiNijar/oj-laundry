@@ -13,8 +13,20 @@
       rel="stylesheet"
       href="plugin/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
     />
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
+    <script src="../node_modules/aos/dist/aos.js"></script>
   </head>
-  <body>
+  <body onload="initLoader()">
+    <div
+      id="spinner"
+      class="bg-rose-900 z-[99] fixed inset-0 flex items-center justify-center"
+    >
+      <div class="spinner">
+        <div class="bg-white double-bounce1"></div>
+        <div class="bg-white double-bounce2"></div>
+      </div>
+    </div>
+
     <div class="wrapper min-h-[100vh]">
       <div class="main-navbar supports-backdrop-blur:bg-white/95">
         <div class="max-w-8xl mx-auto">
@@ -83,7 +95,7 @@
                     onclick="scrollToElement('contact')"
                     class="bg-orange-100 text-sm font-bold text-rose-900 py-2 px-4 rounded-md"
                   >
-                    Contact Now
+                    Detail Contact
                   </button>
                 </div>
               </div>
@@ -127,29 +139,55 @@
       <!-- About Section -->
       <section id="about" class="mt-8 max-w-6xl mx-auto">
         <div class="py-6">
-          <h2 class="__heading_section">About</h2>
+          <h2
+            data-aos="fade-right"
+            data-aos-easing="ease"
+            data-aos-duration="1000"
+            data-aos-offset="600"
+            class="__heading_section"
+          >
+            About
+          </h2>
           <div
             class="mx-auto mt-5 grid grid-cols-1 lg:max-w-6xl lg:gap-x-20 lg:grid-cols-2"
           >
-            <div class="__heading_1 row-span-2 col-span-full lg:col-span-1">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
+              class="__heading_1 row-span-2 col-span-full lg:col-span-1"
+            >
               OJ Laundry
             </div>
             <div
               class="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0"
             >
               <img
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease"
+                data-aos-duration="1000"
+                data-aos-offset="600"
                 src="../public/images/main-banner/2021-11-04.jpg"
                 alt=""
                 class="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
                 loading="lazy"
               />
               <img
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease"
+                data-aos-offset="600"
                 src="../public/images/main-banner/2021-11-05.jpg"
                 alt=""
                 class="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
                 loading="lazy"
               />
               <img
+                data-aos="fade-left"
+                data-aos-easing="ease"
+                data-aos-offset="600"
+                data-aos-duration="1000"
                 src="../public/images/main-banner/2021-11-13.jpg"
                 alt=""
                 class="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
@@ -157,6 +195,10 @@
               />
             </div>
             <div
+              data-aos="fade-right"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="text-xs font-medium flex items-center row-start-2 sm:row-start-3 md:mt-5 lg:row-start-2"
             >
               <div
@@ -210,6 +252,10 @@
               </div>
             </div>
             <div
+              data-aos="fade-right"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4"
             >
               <a
@@ -222,6 +268,10 @@
               </a>
             </div>
             <p
+              data-aos="fade-right"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 text-rose-900"
             >
               OJ laundry berdiro sejak tahun 2016. Berlokasi d jalan marapan
@@ -236,12 +286,32 @@
       <!-- Services Section -->
       <section id="services" class="mt-8 py-8 bg-orange-100">
         <div class="py-6 max-w-6xl mx-auto">
-          <h2 class="__heading_section mb-3">Services</h2>
+          <h2
+            data-aos="fade-right"
+            data-aos-easing="ease"
+            data-aos-duration="1000"
+            data-aos-offset="600"
+            class="__heading_section mb-3"
+          >
+            Services
+          </h2>
           <div>
-            <h1 class="__heading_2">Harga Kiloan</h1>
+            <h1
+              data-aos="fade-right"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
+              class="__heading_2"
+            >
+              Harga Kiloan
+            </h1>
           </div>
           <div class="grid grid-cols-3 grid-flow-col gap-4 my-5">
             <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="relative hover:shadow-lg transition-all duration-300 flex flex-col break-words bg-white rounded mb-6 xl:mb-0 shadow-sm shadow-rose-300"
             >
               <div class="flex-auto p-4">
@@ -266,6 +336,10 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="relative hover:shadow-lg duration-300 flex flex-col break-words bg-white rounded mb-6 xl:mb-0 shadow-sm shadow-rose-300"
             >
               <div class="flex-auto p-4">
@@ -290,6 +364,10 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="relative hover:shadow-lg duration-300 flex flex-col break-words bg-white rounded mb-6 xl:mb-0 shadow-sm shadow-rose-300"
             >
               <div class="flex-auto p-4">
@@ -316,6 +394,10 @@
           </div>
           <div class="grid grid-cols-4 grid-flow-col gap-4 my-5">
             <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="relative hover:shadow-lg transition-all duration-300 flex flex-col break-words bg-white rounded mb-6 xl:mb-0 shadow-sm shadow-rose-300"
             >
               <div class="flex-auto p-4">
@@ -340,6 +422,10 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="relative hover:shadow-lg duration-300 flex flex-col break-words bg-white rounded mb-6 xl:mb-0 shadow-sm shadow-rose-300"
             >
               <div class="flex-auto p-4">
@@ -364,6 +450,10 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="relative hover:shadow-lg duration-300 flex flex-col break-words bg-white rounded mb-6 xl:mb-0 shadow-sm shadow-rose-300"
             >
               <div class="flex-auto p-4">
@@ -388,6 +478,10 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="relative hover:shadow-lg duration-300 flex flex-col break-words bg-white rounded mb-6 xl:mb-0 shadow-sm shadow-rose-300"
             >
               <div class="flex-auto p-4">
@@ -414,6 +508,10 @@
           </div>
           <div class="grid grid-cols-4 grid-flow-col gap-4 my-5">
             <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="relative hover:shadow-lg transition-all duration-300 flex flex-col break-words bg-white rounded mb-6 xl:mb-0 shadow-sm shadow-rose-300"
             >
               <div class="flex-auto p-4">
@@ -438,6 +536,10 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="relative hover:shadow-lg duration-300 flex flex-col break-words bg-white rounded mb-6 xl:mb-0 shadow-sm shadow-rose-300"
             >
               <div class="flex-auto p-4">
@@ -462,6 +564,10 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="relative hover:shadow-lg duration-300 flex flex-col break-words bg-white rounded mb-6 xl:mb-0 shadow-sm shadow-rose-300"
             >
               <div class="flex-auto p-4">
@@ -486,6 +592,10 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
               class="relative hover:shadow-lg duration-300 flex flex-col break-words bg-white rounded mb-6 xl:mb-0 shadow-sm shadow-rose-300"
             >
               <div class="flex-auto p-4">
@@ -511,25 +621,71 @@
             </div>
           </div>
           <div>
-            <h1 class="__heading_2 mt-10">Paket Deposit</h1>
-            <h2 class="text-rose-800/70">Solusi Tepat Untuk Hemat</h2>
-            <h3 class="__heading_3 border-b border-rose-800">CUCI + SETRIKA</h3>
+            <h1
+              data-aos="fade-right"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
+              class="__heading_2 mt-10"
+            >
+              Paket Deposit
+            </h1>
+            <h2
+              data-aos="fade-right"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
+              class="text-rose-800/70"
+            >
+              Solusi Tepat Untuk Hemat
+            </h2>
+            <h3
+              data-aos="fade-right"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
+              class="__heading_3 border-b border-rose-800"
+            >
+              CUCI + SETRIKA
+            </h3>
           </div>
           <div class="flex flex-wrap -m-4 text-center mt-3 py-4">
             <div
               class="p-4 sm:w-1/2 lg:w-1/3 w-full hover:scale-105 duration-500"
             >
               <div
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-duration="1000"
+                data-aos-offset="600"
                 class="flex items-start justify-between p-4 rounded-lg bg-white shadow-rose-100 shadow-md"
               >
                 <div class="text-left">
-                  <h2 class="text-gray-900 text-lg font-bold">Paket 120KG</h2>
+                  <h2
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-gray-900 text-lg font-bold"
+                  >
+                    Paket 120KG
+                  </h2>
                   <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
                     class="mt-2 text-lg font-bold text-rose-300/50 text-left line-through"
                   >
                     RP. 840.000
                   </h3>
-                  <h3 class="text-xl font-bold text-rose-800 text-left">
+                  <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-xl font-bold text-rose-800 text-left"
+                  >
                     RP. 720.000
                   </h3>
                   <p class="text-sm font-semibold text-gray-400">
@@ -550,7 +706,15 @@
                   class="bg-gradient-to-tr from-rose-800 to-rose-400 min-w-[100px] min-h-[100px] rounded-full shadow-2xl shadow-rose-400 border-white border-dashed border-2 flex justify-center items-center"
                 >
                   <div>
-                    <h1 class="text-white text-2xl">Promo</h1>
+                    <h1
+                      data-aos="fade-right"
+                      data-aos-easing="ease"
+                      data-aos-duration="1000"
+                      data-aos-offset="600"
+                      class="text-white text-2xl"
+                    >
+                      Promo
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -559,16 +723,38 @@
               class="p-4 sm:w-1/2 lg:w-1/3 w-full hover:scale-105 duration-500"
             >
               <div
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-duration="1000"
+                data-aos-offset="600"
                 class="flex items-start justify-between p-4 rounded-lg bg-white shadow-rose-100 shadow-md"
               >
                 <div class="text-left">
-                  <h2 class="text-gray-900 text-lg font-bold">Paket 90KG</h2>
+                  <h2
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-gray-900 text-lg font-bold"
+                  >
+                    Paket 90KG
+                  </h2>
                   <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
                     class="mt-2 text-lg font-bold text-rose-300/50 text-left line-through"
                   >
                     RP. 630.000
                   </h3>
-                  <h3 class="text-xl font-bold text-rose-800 text-left">
+                  <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-xl font-bold text-rose-800 text-left"
+                  >
                     RP. 540.000
                   </h3>
                   <p class="text-sm font-semibold text-gray-400">
@@ -590,7 +776,15 @@
                   class="bg-gradient-to-tr from-rose-800 to-rose-400 min-w-[100px] min-h-[100px] rounded-full shadow-2xl shadow-rose-400 border-white border-dashed border-2 flex justify-center items-center"
                 >
                   <div>
-                    <h1 class="text-white text-2xl">Promo</h1>
+                    <h1
+                      data-aos="fade-right"
+                      data-aos-easing="ease"
+                      data-aos-duration="1000"
+                      data-aos-offset="600"
+                      class="text-white text-2xl"
+                    >
+                      Promo
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -599,16 +793,38 @@
               class="p-4 sm:w-1/2 lg:w-1/3 w-full hover:scale-105 duration-500"
             >
               <div
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-duration="1000"
+                data-aos-offset="600"
                 class="flex items-start justify-between p-4 rounded-lg bg-white shadow-rose-100 shadow-md"
               >
                 <div class="text-left">
-                  <h2 class="text-gray-900 text-lg font-bold">Paket 60KG</h2>
+                  <h2
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-gray-900 text-lg font-bold"
+                  >
+                    Paket 60KG
+                  </h2>
                   <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
                     class="mt-2 text-lg font-bold text-rose-300/50 text-left line-through"
                   >
                     RP. 420.000
                   </h3>
-                  <h3 class="text-xl font-bold text-rose-800 text-left">
+                  <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-xl font-bold text-rose-800 text-left"
+                  >
                     RP. 360.000
                   </h3>
                   <p class="text-sm font-semibold text-gray-400">
@@ -629,7 +845,15 @@
                   class="bg-gradient-to-tr from-rose-800 to-rose-400 min-w-[100px] min-h-[100px] rounded-full shadow-2xl shadow-rose-400 border-white border-dashed border-2 flex justify-center items-center"
                 >
                   <div>
-                    <h1 class="text-white text-2xl">Promo</h1>
+                    <h1
+                      data-aos="fade-right"
+                      data-aos-easing="ease"
+                      data-aos-duration="1000"
+                      data-aos-offset="600"
+                      class="text-white text-2xl"
+                    >
+                      Promo
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -638,16 +862,38 @@
               class="p-4 sm:w-1/2 lg:w-1/3 w-full hover:scale-105 duration-500"
             >
               <div
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-duration="1000"
+                data-aos-offset="600"
                 class="flex items-start justify-between p-4 rounded-lg bg-white shadow-rose-100 shadow-md"
               >
                 <div class="text-left">
-                  <h2 class="text-gray-900 text-lg font-bold">Paket 30KG</h2>
+                  <h2
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-gray-900 text-lg font-bold"
+                  >
+                    Paket 30KG
+                  </h2>
                   <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
                     class="mt-2 text-lg font-bold text-rose-300/50 text-left line-through"
                   >
                     RP. 210.000
                   </h3>
-                  <h3 class="text-xl font-bold text-rose-800 text-left">
+                  <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-xl font-bold text-rose-800 text-left"
+                  >
                     RP. 195.000
                   </h3>
                   <p class="text-sm font-semibold text-gray-400">
@@ -668,7 +914,15 @@
                   class="bg-gradient-to-tr from-rose-800 to-rose-400 min-w-[100px] min-h-[100px] rounded-full shadow-2xl shadow-rose-400 border-white border-dashed border-2 flex justify-center items-center"
                 >
                   <div>
-                    <h1 class="text-white text-2xl">Promo</h1>
+                    <h1
+                      data-aos="fade-right"
+                      data-aos-easing="ease"
+                      data-aos-duration="1000"
+                      data-aos-offset="600"
+                      class="text-white text-2xl"
+                    >
+                      Promo
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -676,23 +930,53 @@
           </div>
           <br class="py-16" />
           <div>
-            <h3 class="__heading_3 border-b border-rose-800">SETRIKA SAJA</h3>
+            <h3
+              data-aos="fade-right"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+              data-aos-offset="600"
+              class="__heading_3 border-b border-rose-800"
+            >
+              SETRIKA SAJA
+            </h3>
           </div>
           <div class="flex flex-wrap -m-4 text-center mt-3 py-4">
             <div
               class="p-4 sm:w-1/2 lg:w-1/3 w-full hover:scale-105 duration-500"
             >
               <div
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-duration="1000"
+                data-aos-offset="600"
                 class="flex items-start justify-between p-4 rounded-lg bg-white shadow-rose-100 shadow-md"
               >
                 <div class="text-left">
-                  <h2 class="text-gray-900 text-lg font-bold">Paket 120KG</h2>
+                  <h2
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-gray-900 text-lg font-bold"
+                  >
+                    Paket 120KG
+                  </h2>
                   <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
                     class="mt-2 text-lg font-bold text-rose-300/50 text-left line-through"
                   >
                     RP. 1.000.000
                   </h3>
-                  <h3 class="text-xl font-bold text-rose-800 text-left">
+                  <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-xl font-bold text-rose-800 text-left"
+                  >
                     RP. 960.000
                   </h3>
                   <p class="text-sm font-semibold text-gray-400">
@@ -713,7 +997,15 @@
                   class="bg-gradient-to-tr from-rose-800 to-rose-400 min-w-[100px] min-h-[100px] rounded-full shadow-2xl shadow-rose-400 border-white border-dashed border-2 flex justify-center items-center"
                 >
                   <div>
-                    <h1 class="text-white text-2xl">Promo</h1>
+                    <h1
+                      data-aos="fade-right"
+                      data-aos-easing="ease"
+                      data-aos-duration="1000"
+                      data-aos-offset="600"
+                      class="text-white text-2xl"
+                    >
+                      Promo
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -722,16 +1014,38 @@
               class="p-4 sm:w-1/2 lg:w-1/3 w-full hover:scale-105 duration-500"
             >
               <div
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-duration="1000"
+                data-aos-offset="600"
                 class="flex items-start justify-between p-4 rounded-lg bg-white shadow-rose-100 shadow-md"
               >
                 <div class="text-left">
-                  <h2 class="text-gray-900 text-lg font-bold">Paket 90KG</h2>
+                  <h2
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-gray-900 text-lg font-bold"
+                  >
+                    Paket 90KG
+                  </h2>
                   <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
                     class="mt-2 text-lg font-bold text-rose-300/50 text-left line-through"
                   >
                     RP. 810.000
                   </h3>
-                  <h3 class="text-xl font-bold text-rose-800 text-left">
+                  <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-xl font-bold text-rose-800 text-left"
+                  >
                     RP. 720.000
                   </h3>
                   <p class="text-sm font-semibold text-gray-400">
@@ -753,7 +1067,15 @@
                   class="bg-gradient-to-tr from-rose-800 to-rose-400 min-w-[100px] min-h-[100px] rounded-full shadow-2xl shadow-rose-400 border-white border-dashed border-2 flex justify-center items-center"
                 >
                   <div>
-                    <h1 class="text-white text-2xl">Promo</h1>
+                    <h1
+                      data-aos="fade-right"
+                      data-aos-easing="ease"
+                      data-aos-duration="1000"
+                      data-aos-offset="600"
+                      class="text-white text-2xl"
+                    >
+                      Promo
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -762,16 +1084,38 @@
               class="p-4 sm:w-1/2 lg:w-1/3 w-full hover:scale-105 duration-500"
             >
               <div
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-duration="1000"
+                data-aos-offset="600"
                 class="flex items-start justify-between p-4 rounded-lg bg-white shadow-rose-100 shadow-md"
               >
                 <div class="text-left">
-                  <h2 class="text-gray-900 text-lg font-bold">Paket 60KG</h2>
+                  <h2
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-gray-900 text-lg font-bold"
+                  >
+                    Paket 60KG
+                  </h2>
                   <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
                     class="mt-2 text-lg font-bold text-rose-300/50 text-left line-through"
                   >
                     RP. 540.000
                   </h3>
-                  <h3 class="text-xl font-bold text-rose-800 text-left">
+                  <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-xl font-bold text-rose-800 text-left"
+                  >
                     RP. 480.000
                   </h3>
                   <p class="text-sm font-semibold text-gray-400">
@@ -792,7 +1136,15 @@
                   class="bg-gradient-to-tr from-rose-800 to-rose-400 min-w-[100px] min-h-[100px] rounded-full shadow-2xl shadow-rose-400 border-white border-dashed border-2 flex justify-center items-center"
                 >
                   <div>
-                    <h1 class="text-white text-2xl">Promo</h1>
+                    <h1
+                      data-aos="fade-right"
+                      data-aos-easing="ease"
+                      data-aos-duration="1000"
+                      data-aos-offset="600"
+                      class="text-white text-2xl"
+                    >
+                      Promo
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -801,16 +1153,38 @@
               class="p-4 sm:w-1/2 lg:w-1/3 w-full hover:scale-105 duration-500"
             >
               <div
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-duration="1000"
+                data-aos-offset="600"
                 class="flex items-start justify-between p-4 rounded-lg bg-white shadow-rose-100 shadow-md"
               >
                 <div class="text-left">
-                  <h2 class="text-gray-900 text-lg font-bold">Paket 30KG</h2>
+                  <h2
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-gray-900 text-lg font-bold"
+                  >
+                    Paket 30KG
+                  </h2>
                   <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
                     class="mt-2 text-lg font-bold text-rose-300/50 text-left line-through"
                   >
                     RP. 270.000
                   </h3>
-                  <h3 class="text-xl font-bold text-rose-800 text-left">
+                  <h3
+                    data-aos="fade-right"
+                    data-aos-easing="ease"
+                    data-aos-duration="1000"
+                    data-aos-offset="600"
+                    class="text-xl font-bold text-rose-800 text-left"
+                  >
                     RP. 255.000
                   </h3>
                   <p class="text-sm font-semibold text-gray-400">
@@ -831,7 +1205,15 @@
                   class="bg-gradient-to-tr from-rose-800 to-rose-400 min-w-[100px] min-h-[100px] rounded-full shadow-2xl shadow-rose-400 border-white border-dashed border-2 flex justify-center items-center"
                 >
                   <div>
-                    <h1 class="text-white text-2xl">Promo</h1>
+                    <h1
+                      data-aos="fade-right"
+                      data-aos-easing="ease"
+                      data-aos-duration="1000"
+                      data-aos-offset="600"
+                      class="text-white text-2xl"
+                    >
+                      Promo
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -857,11 +1239,23 @@
         class="mt-8"
       >
         <div class="max-w-6xl mx-auto py-20 bg-opacity-10">
-          <h2 class="__heading_section">Benefits</h2>
+          <h2
+            data-aos="fade-right"
+            data-aos-easing="ease"
+            data-aos-duration="1000"
+            data-aos-offset="600"
+            class="__heading_section"
+          >
+            Benefits
+          </h2>
           <div
             class="grid mt-5 grid-cols-1 md:lg:xl:grid-cols-3 bg-white shadow-xl shadow-neutral-100 border"
           >
             <div
+              data-aos="fade-down-right"
+              data-aos-easing="ease"
+              data-aos-offset="600"
+              data-aos-duration="1000"
               class="p-10 flex flex-col items-center text-center md:lg:xl:border-r hover:bg-slate-50 cursor-pointer"
             >
               <span
@@ -885,6 +1279,10 @@
             </div>
 
             <div
+              data-aos="fade-down"
+              data-aos-easing="ease"
+              data-aos-offset="600"
+              data-aos-duration="1000"
               class="p-10 flex flex-col items-center text-center md:lg:xl:border-r hover:bg-slate-50 cursor-pointer"
             >
               <span
@@ -907,6 +1305,10 @@
             </div>
 
             <div
+              data-aos="fade-down-left"
+              data-aos-easing="ease"
+              data-aos-offset="600"
+              data-aos-duration="1000"
               class="p-10 flex flex-col items-center text-center md:lg:xl:border-r hover:bg-slate-50 cursor-pointer"
             >
               <span
@@ -924,6 +1326,10 @@
             </div>
 
             <div
+              data-aos="fade-up-right"
+              data-aos-easing="ease"
+              data-aos-offset="600"
+              data-aos-duration="1000"
               class="p-10 flex flex-col items-center text-center md:lg:xl:border-r md:lg:xl:border-t hover:bg-slate-50 cursor-pointer"
             >
               <span
@@ -944,6 +1350,10 @@
             </div>
 
             <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-offset="600"
+              data-aos-duration="1000"
               class="p-10 flex flex-col items-center text-center hover:bg-slate-50 cursor-pointer md:lg:xl:border-r md:lg:xl:border-t"
             >
               <span
@@ -969,6 +1379,10 @@
             </div>
 
             <div
+              data-aos="fade-up-left"
+              data-aos-easing="ease"
+              data-aos-offset="600"
+              data-aos-duration="1000"
               class="p-10 flex flex-col items-center text-center hover:bg-slate-50 cursor-pointer md:lg:xl:border-t"
             >
               <span
@@ -1070,7 +1484,13 @@
       <!-- Contact -->
       <section id="contact" class="pb-12 max-w-6xl mx-auto mt-16">
         <div class="flex gap-10 justify-between">
-          <div class="w-1/2">
+          <div
+            class="w-1/2"
+            data-aos="fade-right"
+            data-aos-easing="ease"
+            data-aos-offset="600"
+            data-aos-duration="1000"
+          >
             <div class="__heading_2 row-span-2 col-span-full lg:col-span-1">
               Contact OJ Laundry
             </div>
@@ -1129,7 +1549,13 @@
               </a>
             </div>
           </div>
-          <div class="w-1/2">
+          <div
+            class="w-1/2"
+            data-aos="fade-left"
+            data-aos-easing="ease"
+            data-aos-offset="600"
+            data-aos-duration="1000"
+          >
             <iframe
               class="w-[100%] h-[300px]"
               frameborder="0"
@@ -1244,6 +1670,8 @@
     <script src="js/global.js"></script>
     <script>
       $(document).ready(function ($) {
+        AOS.init({});
+
         $("#main-carousel").owlCarousel({
           animateOut: "slideOutDown",
           animateIn: "flipInX",
