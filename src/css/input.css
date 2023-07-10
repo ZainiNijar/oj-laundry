@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .main-navbar {
+        @apply fixed top-0 z-40 w-full flex-none transition-all duration-300 lg:z-50  bg-rose-900 py-1 ease-in;
+    }
+
+    .main-navbar-scroll {
+        @apply bg-rose-900/80 py-0 backdrop-blur;
+    }
+
+    .__heading_section {
+        @apply font-bold text-rose-900 underline decoration-rose-900;
+    }
+
+    .__heading_1 {
+        @apply font-bold __text_primary text-7xl;
+    }
+    .__heading_2 {
+        @apply font-bold __text_primary text-4xl;
+    }
+    .__heading_3 {
+        @apply font-bold __text_primary text-2xl;
+    }
+
+    .__text_primary {
+        @apply text-rose-800
+    }
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #8c4259;
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+#main-carousel .owl-dots {
+    margin-top: -50px !important;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
